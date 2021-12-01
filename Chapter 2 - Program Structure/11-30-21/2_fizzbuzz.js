@@ -69,17 +69,23 @@ const fizzBuzz3 = () => {
 		let output = '';
 
 		for (let num in fizzHash) {
-			if (i % num === 0) {
-				output += fizzHash[num];
-			}
+			if (i % num === 0) output += fizzHash[num];
 		}
 
-		if (output === '') {
-			output = i;
-		}
+		if (output === '') output = i;
 
 		console.log(output);
 	}
 };
 
 fizzBuzz3();
+
+// Book Solution
+for (let n = 1; n <= 100; n++) {
+	let output = '';
+
+	if (n % 3 === 0) output += 'Fizz';
+	if (n % 5 === 0) output += 'Buzz';
+
+	console.log(output || n);
+}

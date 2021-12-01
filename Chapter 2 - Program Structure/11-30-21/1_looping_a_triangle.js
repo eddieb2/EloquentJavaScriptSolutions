@@ -32,3 +32,9 @@ for (let i = 0; i <= 7; i++) {
 for (let i = '#'; i.length <= 7; i += '#') {
 	console.log(i);
 }
+
+// Book Solution
+
+for (let line = '#'; line.length < 8; line += '#') {
+	console.log(line);
+}
